@@ -1,0 +1,67 @@
+<!-- Modificación de tailwind del fichero libre.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Techas tour</title>
+    <meta name="description" content="Máster UOC">
+    <meta name="author" content="Fernando Manzano Blas">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link  rel="icon"   href="./assets/images/Teatro.png" type="image/png" />
+    
+    <link rel="stylesheet" type="text/css" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+  </head>
+  
+  <body> 
+    <div class="container mx-4 text-center">
+        <h1><button onclick="javascript:history.back()"><i class="fas fa-arrow-alt-circle-left"></i></button></a>Tour M4-258</h1>
+          <p class="font-sans text-gray text-2xl text-center mx-6">Disfruta de nuestro Tour por las tres ciudades más importantes de España: Barcelona, Madird y Valencia. Podrás comprar las entradas para cada ciudad al precio que tu decidas.</p>
+    </div> 
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sd:grid-cols-1 gap-4 p-8 ml-11">
+        <!--Card 1-->
+        <div class="container text-center border-gray-400 border-2 rounded-lg">
+            <img style="height:30%" class="object-contain min-w-full max-h-1/2" src="./assets/images/Barcelona.jpg" alt="Barcelona">
+            <span class="text-red-700 text-2xl">25€<span class="text-gray-700">/ju/vi/sa/do</span></span>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Del 4/12/2021</li>
+              <li>al 12/12/2021</li>
+              <li>3 sesiones</li>
+              <li>18:00 - 20:00 - 22:00</li>
+            </ul>
+            <button class="btn-compra">Comprar</button>
+        </div>
+        <!--Card 2-->
+        <div class="container text-center border-gray-400 border-2 rounded-lg">
+            <img style="height:30%" class="object-contain min-w-full max-h-1/2" src="./assets/images/Madrid.jpg" alt="Barcelona">
+           
+            <span class="text-red-700 text-2xl">25€<span class="text-gray-700">/ju/vi/sa/do</span></span>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Del 4/12/2021</li>
+              <li>al 12/12/2021</li>
+              <li>3 sesiones</li>
+              <li>18:00 - 20:00 - 22:00</li>
+            </ul>
+            <button class="btn-compra">Comprar</button>
+        </div>
+        <!--Card 3-->
+        <div class="container text-center border-gray-400 border-2 rounded-lg">
+            <img style="height:30%" class="object-contain min-w-full max-h-1/2" src="./assets/images/Valencia.jpg" alt="Barcelona">
+            <span class="text-red-700 text-2xl">25€<span class="text-gray-700">/ju/vi/sa/do</span></span>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Del 4/12/2021</li>
+              <li>al 12/12/2021</li>
+              <li>3 sesiones</li>
+              <li>18:00 - 20:00 - 22:00</li>
+            </ul>
+            <button class="btn-compra">Comprar</button>
+        </div>
+    </div> 
+    
+   
+  </body>
+</html>

@@ -1,0 +1,125 @@
+/**
+* Directivas de Tailwind para que coloque el código generado
+*/
+
+@tailwind base;
+@tailwind components;
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import layouts
+ */
+
+@import "layouts/home";
+
+
+// Pantalla principal completa
+@supports (display:grid) {
+  @media (min-width: 42em) and (min-height: 27em) {
+    main {
+      max-width: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 2fr minmax(10em, max-content) minmax(14em, max-content) minmax(1em, 1fr) fit-content(28em) calc(2em + 0.5vw);
+      grid-template-rows: 35vh 40vh 15vh 10vh;
+    }
+
+    h1 {
+      grid-column: 1 / 6;
+      grid-row: 1 / 2;
+      z-index: 2;
+      padding-left: 0.25em;
+      margin-bottom: initial;
+    }
+
+    h2 {
+      grid-row: 1 / -1;
+      grid-column: 6 / 7;
+      writing-mode: vertical-rl;
+      margin-bottom: initial;
+      color: $text;
+    }
+    h3 {
+      grid-row: 1 / -1;
+      grid-column: 6 / 7;
+      margin-bottom: initial;
+      color: $text;
+    }
+    hr {
+      grid-column: 5 / 6;
+      grid-row: 2;
+      height: 6px;
+      background-color: $text;
+      width: 20ch;
+    }
+    .about {
+      grid-column: 5 / 6;
+      grid-row: 2;
+      align-self: end;
+      padding-bottom: 4vh;
+      margin-bottom: initial;
+    }
+    
+    img {
+      grid-column: 1 / 4;
+      grid-row: 1 / 4;
+
+    }
+
+    .location {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+      z-index: 2;
+      background: $main;
+      text-align: center;
+      display: flex;
+
+      p {
+        margin: auto;
+      }
+    }
+
+    button {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      position: initial;
+      padding: 0;
+    }
+    .boton {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      position: initial;
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 48em) and (min-height: 27em) {
+    hr {
+      opacity: 1;
+    }
+  }
+}
+
+/*
+ * Directiva de Tailwind
+ */
+
+@tailwind utilities;
+
+/*
+* Creación de componentes apply
+*/
+
+@layer components {
+  .btn-compra {
+    //@apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+
+    @apply bg-blue-500 rounded-full px-32 py-1 font-semibold text-white text-center mr-2 ml-2;
+    
+  }
+}

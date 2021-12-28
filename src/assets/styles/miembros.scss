@@ -1,0 +1,70 @@
+/**
+* Directivas de Tailwind para que coloque el código generado
+*/
+
+@tailwind base;
+@tailwind components;
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 20vh;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.miembro { 
+  height: 10vh;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: palevioletred;
+  flex-shrink: 1;
+  align-self: center;
+}
+.titulo {
+  height: 10vh;
+  margin: 0.5rem;
+  padding: 2rem;
+  font-size: 2rem;
+  color: white;
+  background-color: rgb(228, 138, 126);
+}
+h1 {
+  font-family: $header-font;
+  color: $accent;
+  font-size: calc(1em + 5vw);
+  margin-bottom: 0.25em;
+  padding-left: 0.25em;
+}
+
+/*
+ * Directiva de Tailwind
+ */
+
+ @tailwind utilities;
+
+ /*
+ * Creación de componentes apply
+ */
+
+ @layer components {
+  .categoria-titulo{
+    @apply bg-yellow-400 text-3xl;
+  }
+  .categoria-miembro{
+    @apply bg-red-300 text-2xl;
+  }
+}
