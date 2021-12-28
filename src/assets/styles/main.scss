@@ -117,9 +117,6 @@
 
 @layer components {
   .btn-compra {
-    //@apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-
-    @apply bg-blue-500 rounded-full px-32 py-1 font-semibold text-white text-center mr-2 ml-2;
-    
+    @apply bg-blue-500 rounded-full px-32 py-1 font-semibold text-white text-center mr-2 ml-2;   
   }
 }
